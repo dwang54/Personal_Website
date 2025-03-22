@@ -99,7 +99,7 @@ h2 {
 
 /* Skills section (left column) */
 .col-six.tab-full:nth-of-type(3) {
-  order: 4;
+  order: 5;
   width: 40%;
 }
 
@@ -135,7 +135,7 @@ h2 {
 
 /* Profile section (right column) */
 .col-six.tab-full:nth-of-type(2) {
-  order: 5;
+  order: 4;
   width: 30%;
 }
 

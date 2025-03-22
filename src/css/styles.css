@@ -1,6 +1,9 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* ------------------------------------------------------------------ */
+/* General Styles
+/* ------------------------------------------------------------------ */
 body {
   font-family: 'Libre Baskerville', serif;
   margin: 0;
@@ -10,16 +13,23 @@ body {
   line-height: 1.6;
 }
 
+/* Container & Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 section {
   padding: 2rem 0;
 }
 
+/* ------------------------------------------------------------------ */
+/* Nav Bar
+/* ------------------------------------------------------------------ */
 #navbar {
   position: fixed;
   top: 0;
@@ -53,6 +63,10 @@ section {
   transition: color 0.3s ease;
 }
 
+
+/* ------------------------------------------------------------------ */
+/* Home 
+/* ------------------------------------------------------------------ */
 #home {
   min-height: 100vh;
   padding-top: 5rem;
@@ -76,34 +90,24 @@ h2 {
   color: #d0d0d0;
 }
 
-/* Main content layout */
-.about-content {
+/* Main content layout (3 column layout) */
+.container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  align-items: flex-start;
 }
 
-.col-six.tab-full.skills {
-  width: 20%;
-  order: 1;
-}
-
-.profile_pic_container {
-  width: 20%;
-  text-align: center;
-  order: 2;
-}
-
-.about-text {
-  width: 40%;
-  order: 3;
-}
-
-.col-six.tab-full.profile {
-  width: 20%;
+/* Skills section (left column) */
+.col-six.tab-full:nth-of-type(3) {
   order: 4;
+  width: 40%;
+}
+
+/* Profile picture (middle column) */
+.profile_pic_container {
+  order: 2;
+  width: 25%;
+  text-align: center;
 }
 
 .profile_picture {
@@ -116,11 +120,23 @@ h2 {
   margin: 0 auto;
 }
 
+/* About text (middle column) */
+#home .container section {
+  order: 3;
+  width: 35%;
+}
+
 .summary, .fun_facts {
   color: #c0c0c0;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.8;
+}
+
+/* Profile section (right column) */
+.col-six.tab-full:nth-of-type(2) {
+  order: 5;
+  width: 30%;
 }
 
 h3 {
@@ -130,6 +146,7 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+/* Icons - vertical stack */
 .icons {
   display: flex;
   flex-direction: column;
@@ -147,6 +164,7 @@ h3 {
   color: #d0d0d0;
 }
 
+/* Buttons */
 .button-section {
   margin-top: 2rem;
 }
@@ -177,6 +195,7 @@ h3 {
   background-color: #a0a0a0;
 }
 
+/* Skills */
 .skill-bars {
   list-style: none;
   padding: 0;
@@ -209,12 +228,29 @@ h3 {
   color: #c0c0c0;
 }
 
-.percent80 { width: 80%; background-color: #b0b0b0; }
-.percent70 { width: 70%; background-color: #b0b0b0; }
-.percent60 { width: 60%; background-color: #b0b0b0; }
-.percent50 { width: 50%; background-color: #b0b0b0; }
+.percent80 {
+  width: 80%;
+  background-color: #b0b0b0;
+}
 
-/* Portfolio Section */
+.percent70 {
+  width: 70%;
+  background-color: #b0b0b0;
+}
+
+.percent60 {
+  width: 60%;
+  background-color: #b0b0b0;
+}
+
+.percent50 {
+  width: 50%;
+  background-color: #b0b0b0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Portfolio
+/* ------------------------------------------------------------------ */
 #portfolio {
   background-color: #1a1a1a;
   padding: 4rem 0;
@@ -345,37 +381,53 @@ h3 {
   color: #d0d0d0;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 992px) {
-  .about-content {
+  .container {
     flex-direction: column;
   }
-
-  .profile_pic_container, .about-text, .col-six.tab-full.profile, .col-six.tab-full.skills {
+  
+  .profile_pic_container, 
+  #home .container section, 
+  .col-six.tab-full:nth-of-type(1), 
+  .col-six.tab-full:nth-of-type(2) {
     width: 100%;
     order: initial;
     margin-bottom: 2rem;
   }
-
+  
+  .profile_picture {
+    margin: 0 auto;
+  }
+  
+  /* Make social icons horizontal on smaller screens */
   .icons {
     flex-direction: row;
     justify-content: center;
   }
-
-  #portfolio-wrapper {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 1.5rem; }
+  #portfolio-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
+/* Fix for missing column styling in your HTML */
 .col-twelve {
   width: 100%;
   margin-bottom: 2rem;
 }
 
+/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }

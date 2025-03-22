@@ -98,9 +98,9 @@ h2 {
 }
 
 /* Skills section (left column) */
-.col-six.tab-full:nth-of-type(2) {
-  order: 1;  /* Skills stays first */
-  width: 35%;
+.col-six.tab-full:nth-of-type(3) {
+  order: 4;
+  width: 40%;
 }
 
 /* Profile picture (middle column) */
@@ -134,9 +134,9 @@ h2 {
 }
 
 /* Profile section (right column) */
-.col-six.tab-full:nth-of-type(1) {
-  order: 2;  /* Profile comes after */
-  width: 25%;
+.col-six.tab-full:nth-of-type(2) {
+  order: 5;
+  width: 30%;
 }
 
 h3 {

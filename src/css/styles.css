@@ -134,10 +134,10 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-/* Icons - vertical stack */
+/* Icons */
 .icons {
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
   margin: 1.5rem 1.5rem;
 }
 

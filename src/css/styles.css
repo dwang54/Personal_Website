@@ -127,6 +127,7 @@ h2 {
 .summary, .fun_facts {
   color: #c0c0c0;
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }

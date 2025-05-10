@@ -116,7 +116,7 @@ h2 {
 }
 
 /* About text (middle column) */
-#home .container section {
+#home .container .biography {
   flex: 1 1 100%;
   text-align: center;
 }

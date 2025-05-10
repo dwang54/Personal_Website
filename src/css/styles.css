@@ -136,7 +136,7 @@ h3 {
 
 /* Icons - vertical stack */
 .icons {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   gap: 1.5rem;
   margin: 1.5rem 0;

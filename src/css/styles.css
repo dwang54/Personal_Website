@@ -120,6 +120,7 @@ h2 {
 /* About text (middle column) */
 #home .container section {
   /* order: 3; */
+  justify-content: center;
   width: 35%;
 }
 
@@ -142,7 +143,6 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  /* justify-content: center; */
   margin-top: 1.5rem;
 }
 
@@ -309,7 +309,6 @@ h3 {
     margin: 0 auto;
   }
   
-  /* Make social icons horizontal on smaller screens */
   .icons {
     flex-direction: row;
     justify-content: center;

@@ -102,6 +102,9 @@ h2 {
   order: 2;
   width: 25%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile_picture {
@@ -136,10 +139,10 @@ h3 {
 
 /* Icons */
 .icons {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   gap: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 3rem;
 }
 

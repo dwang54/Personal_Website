@@ -127,20 +127,6 @@ h2 {
   line-height: 1.8;
 }
 
-
-/* Skills section (left column) */
-.col-six.tab-full:nth-of-type(3) {
-  order: 4;
-  width: 40%;
-}
-
-
-/* Profile section (right column) */
-.col-six.tab-full:nth-of-type(2) {
-  order: 5;
-  width: 30%;
-}
-
 h3 {
   font-size: 1.5rem;
   color: #d0d0d0;
@@ -195,59 +181,6 @@ h3 {
 
 .button-primary:hover {
   background-color: #a0a0a0;
-}
-
-/* Skills */
-.skill-bars {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-bars li {
-  margin-bottom: 1.5rem;
-}
-
-.skill-bars strong {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.progress {
-  background-color: #888888;
-  height: 10px;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.progress span {
-  position: absolute;
-  right: 0;
-  top: -25px;
-  font-size: 0.8rem;
-  color: #c0c0c0;
-}
-
-.percent80 {
-  width: 80%;
-  background-color: #b0b0b0;
-}
-
-.percent70 {
-  width: 70%;
-  background-color: #b0b0b0;
-}
-
-.percent60 {
-  width: 60%;
-  background-color: #b0b0b0;
-}
-
-.percent50 {
-  width: 50%;
-  background-color: #b0b0b0;
 }
 
 /* ------------------------------------------------------------------ */

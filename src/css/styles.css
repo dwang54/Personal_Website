@@ -136,8 +136,9 @@ h3 {
 
 /* Icons */
 .icons {
+  display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 2.5rem;
   margin: 1.5rem 1.5rem;
 }
 

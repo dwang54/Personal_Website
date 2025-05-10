@@ -136,7 +136,7 @@ h3 {
 
 /* Icons */
 .icons {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   gap: 2rem;
   justify-content: center;

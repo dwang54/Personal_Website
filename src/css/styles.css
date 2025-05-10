@@ -87,7 +87,7 @@ h2 {
   font-size: 1.8rem;
   margin-top: 0;
   margin-bottom: 2rem;
-  color: #d0d0d0;
+  color: #eb7611;
 }
 
 /* Main content layout (3 column layout) */
@@ -95,12 +95,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-/* Skills section (left column) */
-.col-six.tab-full:nth-of-type(3) {
-  order: 4;
-  width: 40%;
 }
 
 /* Profile picture (middle column) */
@@ -114,7 +108,7 @@ h2 {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  border: 3px solid #808080;
+  border: 2px solid #eb7611;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -132,6 +126,14 @@ h2 {
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }
+
+
+/* Skills section (left column) */
+.col-six.tab-full:nth-of-type(3) {
+  order: 4;
+  width: 40%;
+}
+
 
 /* Profile section (right column) */
 .col-six.tab-full:nth-of-type(2) {

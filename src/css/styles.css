@@ -138,8 +138,8 @@ h2 {
   flex-direction: row;
   gap: 2rem;
   margin-top: 1.5rem;
-  justify-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 

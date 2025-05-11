@@ -97,8 +97,7 @@ h2 {
 /* Main content layout */
 .container {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 

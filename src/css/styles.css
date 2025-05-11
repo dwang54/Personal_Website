@@ -138,6 +138,7 @@ h2 {
   flex-direction: row;
   gap: 2rem;
   margin-top: 1.5rem;
+  justify-content: center;
 }
 
 

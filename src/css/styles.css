@@ -340,17 +340,18 @@ h2 {
 
 /* Modal Popup Styles */
 .popup-modal {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 700px;             /* Set desired modal width */
+  max-width: 90%;           /* Responsive fallback for smaller screens */
   background: #222;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  display: none; /* Hidden by default until opened */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: none;
+  margin: 4rem auto;         /* Center vertically with some top spacing */
 }
 
-/* Show modal when it has the 'mfp-ready' class (added by Magnific Popup) */
+
 .mfp-ready .popup-modal {
   display: block;
 }

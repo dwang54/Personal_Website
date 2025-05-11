@@ -166,8 +166,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-
-
 .section-intro h3 {
   font-size: 1.5rem;
   color: #d0d0d0;
@@ -178,6 +176,13 @@ h2 {
 .section-intro h4 {
   color: #eb7611;
 }
+
+
+
+
+
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
@@ -218,11 +223,6 @@ h2 {
   }
 }
 
-/* Fix for missing column styling in your HTML */
-.col-twelve {
-  width: 100%;
-  margin-bottom: 2rem;
-}
 
 /* Smooth scroll behavior */
 html {

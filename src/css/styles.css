@@ -256,6 +256,11 @@ h2 {
   height: 100%;
 }
 
+.item-wrap a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .item-wrap img {
   width: 100%;
   height: 250px;
@@ -342,6 +347,12 @@ h2 {
   overflow: hidden;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  display: none; /* Hidden by default until opened */
+}
+
+/* Show modal when it has the 'mfp-ready' class (added by Magnific Popup) */
+.mfp-ready .popup-modal {
+  display: block;
 }
 
 .popup-modal img, 
@@ -392,6 +403,7 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .link-box a:first-child {
@@ -420,6 +432,50 @@ h2 {
   color: #fff;
 }
 
+/* Magnific Popup Animation */
+/* Overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+/* Overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* Overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* Content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-out;
+}
+/* Content animate in */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Position the modal properly when opened */
+.mfp-wrap {
+  z-index: 9999;
+}
+
+/* Fix for popup modal glitches - prevent text selection */
+.mfp-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 /* Responsive Styles */
 @media only screen and (max-width: 992px) {
   #portfolio-wrapper {
@@ -442,6 +498,10 @@ h2 {
   
   .description-box h4 {
     font-size: 1.3rem;
+  }
+  
+  .popup-modal {
+    max-width: 90%;
   }
 }
 

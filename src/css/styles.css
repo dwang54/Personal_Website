@@ -137,8 +137,6 @@ h2 {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  /* padding-top: 2rem; */
-  margin-top: 2rem;
   justify-content: center;
   width: 100%;
 }

@@ -113,7 +113,7 @@
                         <div class="overlay">
                             <div class="portfolio-item-meta">
                                 <h5>Space Invaders on STM32</h5>
-                                <p>Microcontrollers, embedded C</p>
+                                <p>Microcontrollers, Embedded C</p>
                             </div>
                         </div>
                         <div class="link-icon"><i class="fa-solid fa-plus"></i></div>
@@ -251,9 +251,9 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
      <script>
-        $(document).ready(function() {
-            // Initialize Magnific Popup for portfolio items
-            $('.popup-modal').magnificPopup({
+        $(document).ready(function () {
+  // Correct target: the <a> elements that trigger the modals
+            $('.item-wrap a').magnificPopup({
                 type: 'inline',
                 preloader: false,
                 modal: true,
@@ -261,13 +261,14 @@
                 removalDelay: 300,
                 fixedContentPos: true
             });
-            
-            // Close popup when "Close" button is clicked
-            $(document).on('click', '.popup-modal-dismiss', function(e) {
+
+            // Dismiss handler
+            $(document).on('click', '.popup-modal-dismiss', function (e) {
                 e.preventDefault();
                 $.magnificPopup.close();
             });
-        });
+            });
+
     </script>     
 </body>
         

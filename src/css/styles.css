@@ -134,11 +134,11 @@ h2 {
 
 /* Icons */
 .icons {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-top: 1.5rem;
-  justify-content: center;
   justify-items: center;
 }
 

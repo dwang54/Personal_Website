@@ -352,15 +352,19 @@ h2 {
 }
 
 
+
 .mfp-ready .popup-modal {
   display: block;
 }
 
-.popup-modal img, 
+.popup-modal img,
 .popup-modal video {
   width: 100%;
+  max-height: 400px;
+  object-fit: cover;
   display: block;
 }
+
 
 .description-box {
   padding: 1.5rem;

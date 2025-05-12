@@ -327,7 +327,7 @@ h2 {
   transform: translateY(0);
 }
 
-/* Modal Popup Styles
+/* Modal Popup Styles */
 .popup-modal {
   width: 700px;             
   max-width: 90%;          
@@ -337,7 +337,7 @@ h2 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: none;
   margin: 4rem auto;        
-} */
+}
 
 .mfp-ready .popup-modal {
   display: block;

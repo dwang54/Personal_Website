@@ -205,7 +205,6 @@ h2 {
 .project-item {
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 

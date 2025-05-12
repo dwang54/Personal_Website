@@ -188,7 +188,7 @@
         <!-- </div> twelve columns end -->
 
 
-        <!-- Modal Popup
+        <!-- Modal Popups
          --------------------------------------------------------------- -->
 
         <div id="modal-01" class="popup-modal mfp-hide">
@@ -252,7 +252,6 @@
 
      <script>
         $(document).ready(function () {
-  // Correct target: the <a> elements that trigger the modals
             $('.item-wrap a').magnificPopup({
                 type: 'inline',
                 preloader: false,
@@ -262,7 +261,6 @@
                 fixedContentPos: true
             });
 
-            // Dismiss handler
             $(document).on('click', '.popup-modal-dismiss', function (e) {
                 e.preventDefault();
                 $.magnificPopup.close();

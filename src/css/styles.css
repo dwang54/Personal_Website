@@ -13,7 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* Container & Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,7 +27,6 @@ section {
   section {
     scroll-margin-top: 90px;
   }
-  
 }
 
 /* ------------------------------------------------------------------ */
@@ -51,10 +49,6 @@ section {
   margin: 0 0 0 2rem;
 }
 
-/* .nav li {
-  margin-right: 1.5rem;
-} */
-
 .nav a {
   display: block;
   padding: 1.5rem;
@@ -66,7 +60,6 @@ section {
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
-
 
 /* ------------------------------------------------------------------ */
 /* Home 
@@ -94,14 +87,12 @@ h2 {
   color: #eb7611;
 }
 
-/* Main content layout */
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-/* Profile picture */
 .profile_pic_container {
   text-align: center;
   display: flex;
@@ -119,7 +110,6 @@ h2 {
   margin: 0 auto;
 }
 
-/* About text  */
 #home .container .biography {
   width: 60%; 
   text-align: center;
@@ -132,7 +122,6 @@ h2 {
   line-height: 1.8;
 }
 
-/* Icons */
 .icons {
   display: flex;
   flex-direction: row;
@@ -141,8 +130,6 @@ h2 {
   justify-content: center;
   width: 100%;
 }
-
-
 
 .icons a {
   color: #f5f5f5;
@@ -154,12 +141,9 @@ h2 {
   color: #d0d0d0;
 }
 
-
 /* ------------------------------------------------------------------ */
 /* Portfolio
 /* ------------------------------------------------------------------ */
-
-/* Portfolio Section Styles */
 #portfolio {
   background-color: #1a1a1a;
 }
@@ -184,7 +168,6 @@ h2 {
   margin-bottom: 0.25rem;
 }
 
-/* Portfolio Container */
 .portfolio-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -198,7 +181,6 @@ h2 {
   gap: 35px;
 }
 
-/* Project Items */
 .project-item {
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -231,7 +213,6 @@ h2 {
   transform: scale(1.05);
 }
 
-/* Overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -274,8 +255,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-
-/* Modal Popup Styles */
 .popup-modal {
   width: 700px;             
   max-width: 90%;          
@@ -346,6 +325,10 @@ h2 {
   cursor: pointer;
 }
 
+.link-box a.popup-modal-dismiss {
+  margin-left: auto;
+}
+
 .link-box a:first-child {
   background: #11a6eb;
 }
@@ -363,7 +346,6 @@ h2 {
   background: #333;
 }
 
-/* Magnific Popup Customization */
 .mfp-bg {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -372,51 +354,45 @@ h2 {
   color: #fff;
 }
 
-/* Magnific Popup Animation */
-/* Overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
-/* Overlay animate in */
+
 .mfp-fade.mfp-bg.mfp-ready {
   opacity: 0.8;
 }
-/* Overlay animate out */
+
 .mfp-fade.mfp-bg.mfp-removing {
   opacity: 0;
 }
 
-/* Content at start */
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.3s ease-out;
 }
-/* Content animate in */
+
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
   transform: translateY(0);
 }
-/* Content animate out */
+
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
   transform: translateY(-20px);
 }
 
-/* Position the modal properly when opened */
 .mfp-wrap {
   z-index: 9999;
 }
 
-/* Fix for popup modal glitches - prevent text selection */
 .mfp-container {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
 
-/* Responsive Styles */
 @media only screen and (max-width: 992px) {
   #portfolio-wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -465,13 +441,6 @@ h2 {
   }
 }
 
-
-
-
-
-
-
-/* Responsive Adjustments */
 @media (max-width: 992px) {
   .container {
     flex-direction: column;
@@ -494,8 +463,6 @@ h2 {
   }
 }
 
-
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }

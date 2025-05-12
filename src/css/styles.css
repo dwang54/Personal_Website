@@ -331,7 +331,7 @@ h2 {
 .popup-modal {
   width: 700px;             
   max-width: 90%;          
-  background: #b83131;
+  background: #b84444;
   /* 222 */
   border-radius: 8px;
   overflow: hidden;
@@ -358,7 +358,8 @@ h2 {
 
 .description-box {
   padding: 1.5rem;
-  background: #232323;
+  background: #c54545;
+  /* #232323 */
 }
 
 .description-box h4 {

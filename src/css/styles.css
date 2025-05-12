@@ -331,7 +331,8 @@ h2 {
 .popup-modal {
   width: 700px;             
   max-width: 90%;          
-  background: #222;
+  background: #b83131;
+  /* 222 */
   border-radius: 8px;
   overflow: hidden;
   position: relative;

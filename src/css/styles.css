@@ -171,13 +171,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* .section-intro h3 {
-  font-size: 1.8rem;
-  color: #d0d0d0;
-  padding-bottom: 0.8rem;
-  margin-bottom: 1.5rem;
-  position: relative;
-} */
 
 .section-intro h3 {
   font-size: 1.5rem;
@@ -195,10 +188,11 @@ h2 {
 }
 
 /* Portfolio Container */
-.portfilo-container {
+.portfolio-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  background-color: #1a1a1a;
 }
 
 #portfolio-wrapper {

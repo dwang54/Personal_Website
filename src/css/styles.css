@@ -285,27 +285,8 @@ h2 {
   font-size: 0.9rem;
 }
 
-.link-icon {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #11a6eb;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
 
-.item-wrap:hover .link-icon {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 
 /* Modal Popup Styles */
 .popup-modal {

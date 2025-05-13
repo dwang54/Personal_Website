@@ -463,6 +463,15 @@ h2 {
   }
 }
 
+@media (max-width: 992px) {
+  #home .container .biography {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
